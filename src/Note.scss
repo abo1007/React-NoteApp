@@ -1,0 +1,197 @@
+.App {
+    width:100%;
+    height:100%;
+    display:flex;
+    .left{
+        flex: 1;
+        height:100%;
+        display: flex;
+
+        .biglist,.list{
+            flex:1;
+        }
+        .biglist{
+            background-color:#4d4d4d;
+            
+            .top{
+                display: flex;
+                align-items: center;
+                padding:0 10px;
+                color:#fff;
+                height:50px;
+                transition:0.4s ease all;
+                box-shadow:5px 5px 5px #1e1e1e;
+                cursor: pointer;
+
+                .addbtn{
+                    height:26px;
+                    width:26px;
+                    background-color:#7CFC00;
+                    border-radius:13px;
+                    font-size:20px;
+                    font-weight:bold;
+                    margin:0 20px;
+                    display: flex;
+                    justify-content: center;
+                } 
+                span{
+                    font-size:22px;
+                    font-weight:bold;
+                }
+            }
+            .top:hover{
+                transform:scale(1.2);
+                
+            }
+            .filelist{
+
+                .folder{
+                    margin:20px 10px 10px;
+                    color:#fff;
+                    
+                    .title{
+                        height:24px;
+                        font-size:18px;
+                    }
+                    .item{
+                        font-size:14px;
+                        height:20px;
+                        margin:5px 0 5px 20px;
+                        position: relative;
+                        .right-img{
+                            height:90%;
+                            position: absolute;
+                            right:10px;
+                        }
+                    }
+                    p{
+                        display: flex;
+                        align-items: center;
+                        padding:2px 0;
+                        cursor: pointer;
+                        img{
+                            height:100%;
+                            padding:0 5px;
+                        }
+                    }
+                    .item:hover{
+                        background-color:rgba(0,0,0,.5);
+                    }
+                }
+            }
+              
+        }
+        // 左2区块
+        .list{
+            background-color:#d3d3d3;
+            overflow: hidden;
+            .filetitle{
+                height:50px;
+                line-height:50px;
+                padding:0 20px;
+                font-weight:200;
+                // border-bottom:1px #4d4d4d solid;
+                box-shadow:0px 5px 5px #808080;
+            }
+            .itemlist{
+
+                .page{
+                    margin:10px 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .borad{
+                        height:180px;
+                        width:80%;
+                        background-color: #fff;
+                        p{
+                            width:80%;
+                            margin:5px auto;
+                            overflow: hidden;
+                        }
+                        .ti{
+                            font-weight:bold;
+                            height:20px;
+                        }
+                        .con{
+                            height: 140px;
+                            font-size:13px;
+                        }
+                    }
+                    .date{
+                        width:80%;
+                        font-size:13px;
+                        margin:4px 0;
+                        height:20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        img{
+                            height:100%;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    .right{
+        flex:3;
+        height:100%;
+        background-color: #eee;
+        flex-wrap: wrap;
+        .top{
+            height:60px;
+            >div{
+                height:29px;
+                border-bottom:1px solid #ccc;
+                display: flex;
+                align-items: center;
+            }
+            .bigtitle p,.title p{
+                padding-left:15px;
+            }
+            .bigtitle{
+                
+            }
+            .title{
+                
+                input{
+                    padding-left:15px;
+                    background-color:rgba(0,0,0,0);
+                    border:none;
+                }
+            }
+            
+        }
+        .bot{
+            height:calc(100% - 60px);
+            display: flex;
+            flex-wrap: nowrap;
+            .ed,.md{
+                flex: 1;
+                height:100%;
+                width:100%;
+
+            }
+            .ed{
+                background-color:#1e1e1e;
+                overflow: hidden;
+                #text{
+                    display:block;
+                    height:100%;
+                    width:100%;
+                    background-color:#1e1e1e;
+                    color:#fff;
+                    padding:5px;
+                }
+            }
+            .md{
+
+            }
+        }
+    }
+}
+
+  
+  
