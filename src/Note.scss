@@ -105,7 +105,7 @@
                         width:70%;
                         background-color: #fff;
                         border-radius:4px;
-                        border:6px solid #1E90FF;
+                        cursor: pointer;
                         p{
                             width:80%;
                             margin:5px auto;
@@ -116,9 +116,13 @@
                             height:20px;
                         }
                         .con{
-                            height: 140px;
+                            max-height: 130px;
                             font-size:13px;
+
                         }
+                    }
+                    .borad-active{
+                        border:6px solid #1E90FF;
                     }
                     .date{
                         width:70%;
