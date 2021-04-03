@@ -37,7 +37,7 @@ class Note extends React.Component{
     
     render(){
         let notebooks = this.state.notebooks;
-
+        let state = this.state;
         return (
     <div className="App">
       <div className="left">
@@ -68,7 +68,14 @@ class Note extends React.Component{
         </div>
 
         <div className="list">
-          <p className="filetitle">文件夹标题</p>
+          { this.state.notebooks.length == 0 ?
+            <p className="filetitle"></p>
+            :
+            <p className="filetitle">{state.notebooks[state.currentBookIndex].name}</p>
+
+          }
+
+          
           <div className="itemlist">
             {
               this.state.notes.map((item, index) => (
@@ -134,6 +141,7 @@ class Note extends React.Component{
     getNoteData(){
       axios.get('http://localhost:3100/notebooks').then(res => {
         this.setState({notebooks:res.data});
+        console.log(this.state.notebooks);
         this.LoadNotes(this.state.notebooks[0].id);
       }).catch(err => {
          console.log(err);
