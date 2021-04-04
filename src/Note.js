@@ -86,7 +86,7 @@ class Note extends React.Component{
                   </div>
                   <p className="date">
                     <span>{item.datetime}</span>
-                    <img src={laji} alt="删除"/>
+                    <img src={laji} alt="删除" onClick={() => this.deleteNote(item.id)}/>
                   </p>
                 </div>
               ))
@@ -212,16 +212,12 @@ class Note extends React.Component{
       }
     }
 
-    // handleComposition(e){
-    //   console.log(e.type);
-    //   if (e.type === 'compositionend') {
-    //     this.setState({isOnComposition:false});
-    //     this.handleFieldChange(e);
-    //   } else {
-    //     this.setState({isOnComposition:true});
-    //     this.handleFieldChange(e);
-    //   }
-    // }
+    deleteNote(id) {
+      let a = window.confirm("确认要删除id为" + id + "的数据吗？");
+      axios.delete('http://localhost:3100/notes/' + id).then(res => {
+        this.reloadNotes();
+      })
+    }
 
     getClassName(id){
       if(this.state.currentNote && this.state.currentNote.id == id){
