@@ -196,22 +196,6 @@ class Note extends React.Component{
       })
     }
 
-    getHtml(){
-      if(this.state.currentNote == null){
-        return marked(this.state.defaultTip);
-      }else{
-        return marked(this.state.currentNote.body);
-      }
-    }
-
-    getTitle(){
-      if(this.state.currentNote == null){
-        return this.state.defaultTitle;
-      }else{
-        return this.state.currentNote.title;
-      }
-    }
-
     deleteNote(id) {
       let a = window.confirm("确认要删除id为" + id + "的数据吗？");
       axios.delete('http://localhost:3100/notes/' + id).then(res => {

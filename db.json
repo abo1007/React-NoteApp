@@ -58,7 +58,7 @@
     },
     {
       "title": "实战Evernote",
-      "body": "##  开发步骤\n\n-  搭建应用\n-  创建静态页面结构\n-  mock数据接口\n-  开发 **笔记本列表**               \n-  开发 **笔记列表**\n-  开发 **编辑功能**\n-  开发 **新建** 和 **删除**\n\n## 知识点\n\n### Javascript\n\n- fetch / ajax\n- Array\n\n### HTTP\n\n- Restful API\n\n## 基础库和工具\n\n- [json-server](https://github.com/typicode/json-server)\n- [normalize.css](https://necolas.github.io/normalize.css/)\n- [sweetalert](https://sweetalert2.github.io/)\n\nw",
+      "body": "##  开发步骤\n\n-  搭建应用\n-  创建静态页面结构\n-  mock数据接口\n-  开发 **笔记本列表**               \n-  开发 **笔记列表**\n-  开发 **编辑功能**\n-  开发 **新建** 和 **删除**\n\n## 知识点\n\n### Javascript\n\n- fetch / ajax\n- Array\n\n### HTTP\n\n- Restful API\n\n## 基础库和工具\n\n- [json-server](https://github.com/typicode/json-server)\n- [normalize.css](https://necolas.github.io/normalize.css/)\n- [sweetalert](https://sweetalert2.github.io/)\n\n",
       "datetime": "3-13 17:04",
       "notebookId": 1,
       "id": 9
@@ -83,6 +83,13 @@
       "datetime": "3-29 12:57",
       "notebookId": 1,
       "id": 12
+    },
+    {
+      "title": "新建笔记",
+      "body": "",
+      "datetime": "4-5 17:31",
+      "notebookId": 1,
+      "id": 13
     }
   ]
 }
