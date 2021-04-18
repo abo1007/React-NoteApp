@@ -10,6 +10,10 @@
 
 ## 启动方式
 
+0. 安装依赖
+
+> npm install
+
 1. 启动前端项目(运行于`http://localhost:3000`)
 
 > npm start
@@ -18,6 +22,11 @@
 
 > json-server --watch --port 3100 db.json
 
+## 结构说明
+
+* `src` JavaScript资源
+* `src/assets` 静态资源
+* `db.json` json-server服务
 
 ## 其他 构建测试等
 
